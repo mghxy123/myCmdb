@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register_check</title>
+
+</head>
+<script src="/static/vendor/jquery/jquery.js"></script>
+<script>
+    $(function () {
+        $('#username').bind('keydown',function () {
+            aname=$('#username').val();
+            $.ajax(
+                {
+                    url:'/register_check/',
+                    type:'get',
+                    data:{name:aname},
+                    dataType:'json',
+                    success:function (data) {
+                        $('#show').text(data.info)
+                    }
+                }
+            )
+        })
+    })
+
+</script>
+<body>
+
+<div>
+    {% csrf_token %}
+    请输入用户名：
+    <input type="text" id="username">
+    <span id="show" style="color: red"></span>
+</div>
+
+
+</body>
+</html>

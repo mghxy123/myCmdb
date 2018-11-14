@@ -1,0 +1,51 @@
+{% extends 'blank.html' %}
+
+{% block title %}
+    escharts 什么鬼？
+{% endblock %}
+
+{% block style %}
+    <script src="/static/js/echarts.min.js"></script>
+{% endblock %}
+
+{% block label %}
+    Echarts 到底是什么鬼？
+{% endblock %}
+
+{% block content %}
+{#    先定义画布，选择器/用js#}
+    <div id="panel" style="height: 500px;width: 500px"></div>
+    <script>
+        //初始画布
+        var myChart = echarts.init(document.getElementById('panel'));
+        //定义选项参数
+        options = {
+            title:{
+                text:'我的个鬼鬼！'
+            },
+            tooltip:{},
+            legend:{
+                data:['这不科学']
+            },
+            xAxis:{
+                data:['Python','php','java','linux','c']
+            },
+            yAxis:{},
+            series:[
+                {
+                    name:'这不科学',
+                    type:'funnel',
+                    data:[1,2,3,6,7
+
+
+                    ]
+                }
+            ]
+
+        };
+
+        {#myChart.setOption(options)#}
+        myChart.setOption(options)
+
+    </script>
+{% endblock %}

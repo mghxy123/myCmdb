@@ -1,0 +1,185 @@
+{% extends 'blank.html' %}
+{% block title %}
+    Forand index
+{% endblock %}
+
+{% block label %}
+
+    <div class="container-fluid">
+        <div class="col-md-11">
+            Forand CMDB系统
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-default" data-toggle="modal" data-target="#register_user_modal">
+                用户注册
+            </button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="/static/css/registerStyleColor.css">
+{% endblock %}
+
+{% block content %}
+    <div class="modal fade" id="register_user_modal" tabindex="-1" role="dialog" aria-labelledby="MyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="MyLabel">
+                        用户注册
+                    </h4>
+                </div>
+                <form action="/user/register/" method="post" id="Register_Form" enctype="multipart/form-data">
+                {% csrf_token %}
+                    <div class="modal-body">
+                        {% for registerforms in register_forms %}
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    {{ registerforms.label }}
+                                </span>
+                                {{ registerforms }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            注册用户
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+{#    <script>#}
+{#    $(#}
+{#        function () {#}
+{#            alert('let\'s me say 大爷常来啊！' )#}
+{#        }#}
+{#    )#}
+{#    </script>#}
+    <script type="text/javascript" src="/static/vendor/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/static/vendor/jquery/messages_zh.min.js"></script>
+
+    <script>
+        $().ready(
+            function () {
+                $('#Register_Form').validate(
+                    {
+                        rules: {
+                            username: {
+                                required: true,
+                                maxlength: 6,
+                                minlength: 2,
+                                username:function () {
+                                    aname = $('#id_username').val();
+                                    //判断用户名是否存在ajax
+                                    $.ajax(
+                                        {
+                                            url:'/register_check/',
+                                            type:'get',
+                                            data:{username:aname},
+                                            dataType:'json',
+                                            success:function (data) {
+                                                console.log(data.info);
+                                                return data.info;
+                                            }
+                                        }
+                                    );
+                                }
+                            },
+                            password: {
+                                required: true,
+                                maxlength: 20,
+                                minlength: 6
+                            },
+                            nickname: {
+                                required: true,
+                                maxlength: 6,
+                                minlength: 2
+                            },
+                            phone: {
+                                required: true,
+                                minlength: 11
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                        },
+                        message: {
+                            username: {
+                                required: '用户账号不能为空',
+                                maxlength: '用户账号不能大于6位',
+                                minlength: '用户账号不能小于2位',
+                                username: '用户名重复'
+                            },
+                            password: {
+                                required: '密码不能为空',
+                                maxlength: '密码不能大于6位',
+                                minlength: '密码不能小于2位'
+                            },
+                            nickname: {
+                                required: '用户名不能为空',
+                                maxlength: '用户名不能大于6位',
+                                minlength: '用户名不能小于2位'
+                            },
+                            phone: {
+                                required: '手机号不能为空',
+                                minlength: '请输入正确的手机号码'
+                            },
+                            email: {
+                                required: '邮箱不能为空',
+                                email: '请输入正确的邮箱格式',
+                            },
+                        },
+                        submitHandler:function () {
+                            var formdata= new FormData;
+                        {#form.submit()#}
+                            data = $('#Register_Form').serializeArray();
+                            for (var d in data) {
+                                key = data[d]['name'];
+                                value = data[d]['value'];
+                                formdata.append(key, value);
+                            }
+                            img = $("#id_photo")[0].files[0];
+                            formdata.append('photo',img);
+                            console.log(img);
+                            console.log(data);
+                            //取csrf得值
+                            var csrftoken = data[0]['value'];
+                            //提交ajax
+                            $.ajax(
+                                {
+                                    url:'/user/register/',
+                                    type:'POST',
+                                    data:formdata,
+                                    traditional:true,//是否深度序列化数据，true位不深度，
+                                    processData:false,//是否序列化数据
+                                    contentType:false,//信息类型
+                                    success:function (data) {
+                                        console.log(data)
+                                    },
+                                    beforeSend:function (xhr,settings) {
+                                        xhr.setRequestHeader('X-CSRFToken',csrftoken)
+                                    },
+                                    error:function (error) {
+                                        console.log(error)
+                                    }
+                                }
+                            )
+                        }
+                    }
+                )
+            }
+        )
+    </script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "blank.html" %}
+
+{% block title %}
+    EchartsExample
+{% endblock %}
+
+{% block style %}
+    <script src = "/static/js/echarts.min.js"></script>
+{% endblock %}
+
+{% block label %}
+    EchartsExample
+{% endblock %}
+
+{% block content %}
+//设置一个画布
+
+    <div id = "panel" style = "height: 500px; width: 500px;">
+
+    </div>
+		//开始在画布上作图
+    <script>
+        //初始化画布
+        var myChart = echarts.init(document.getElementById("panel"))
+        //定义选项参数
+        options = {
+            title: {
+                text: "我的柱状图"
+            },
+            tooltip:{},
+            legend:{
+                data:["学科"]
+            },
+            xAxis: {
+                data:["python","php","jave","linux","c"]
+            },
+            yAxis: {},
+            series: [
+                {
+                    name: "学科",
+                    type: "bar",
+                    data:[1,4,2,5,3]
+                }
+            ]
+        };
+        myChart.setOption(options)
+    </script>
+{% endblock %}
