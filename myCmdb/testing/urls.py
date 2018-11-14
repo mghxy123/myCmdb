@@ -9,5 +9,6 @@ from testing.views import *
 
 urlpatterns=[
     url(r'^$',index),
+    url(r'^test/$',test),
     url(r'^index/$',index),
 ]
