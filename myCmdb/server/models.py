@@ -115,3 +115,40 @@ class api_info(models.Model):
     name = models.CharField(max_length=32,verbose_name='接口名称')
     description = RichTextUploadingField(verbose_name='接口描述')
     doc = models.CharField(max_length=64,verbose_name='接口说明')
+
+
+class LoginUser(models.Model):
+    '''
+    登录用户
+    '''
+    username = models.CharField(max_length=32,verbose_name='用户名')
+    password = models.CharField(max_length=32,verbose_name='密码')
+
+    def __str__(self):
+        return self.username
+
+class Service(models.Model):
+    '''
+    服务器
+    '''
+    ip = models.CharField(max_length=32,verbose_name='服务器IP')
+    mac = models.CharField(max_length=32,verbose_name='服务器MAC')
+    cpu = models.CharField(max_length=32,verbose_name='服务器CPU')
+    memory = models.CharField(max_length=32,verbose_name='服务器内存P')
+    hostname = models.CharField(max_length=32,verbose_name='服务器主机')
+    isalive = models.CharField(max_length=32,verbose_name='服务器状态')
+
+    def __str__(self):
+        return self.ip
+
+class APITonken(models.Model):
+    '''
+    服务器
+    '''
+    value = models.CharField(max_length=32,verbose_name='token值')
+    #这里一定要注意Django setting默认设置的时间
+    time = models.DateTimeField(max_length=32,verbose_name='生成时间')
+    user_id = models.CharField(max_length=32,verbose_name='token用户')
+
+    def __str__(self):
+        return self.value

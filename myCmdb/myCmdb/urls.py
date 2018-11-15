@@ -19,6 +19,7 @@ from .views import *
 
 urlpatterns = [
     url(r'^$',login),
+    url(r'^/API/',include('server.urls')),
     url(r'^index/$',index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^testing/', include('testing.urls')),
