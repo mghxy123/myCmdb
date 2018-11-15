@@ -68,6 +68,34 @@
 {#    </script>#}
     <script type="text/javascript" src="/static/vendor/jquery/jquery.validate.min.js"></script>
     <script type="text/javascript" src="/static/vendor/jquery/messages_zh.min.js"></script>
+    <script>
+        $(
+            function () {
+                $("#id_username").blur(function () {
+                    {#$("<span>hello world</span>").appendTo($('#id_username').parent());#}
+                    aname = $('#id_username').val();
+                    $.ajax(
+                        {
+                            url:'/register_check/',
+                            type:'get',
+                            data:{username:aname},
+                            dataType:'json',
+                            success:function (data) {
+                                if(data.info=="false"){
+                                    $("<span style=\"color: red\">用户名已存在，请换个用户名</span>").appendTo($('#id_username').parent());
+                                }else{
+                                    $("<span style=\"color: green\">用户名可用</span>").appendTo($('#id_username').parent());
+                                }
+
+
+
+                            }
+                        }
+                    );
+                })
+            }
+        )
+    </script>
 
     <script>
         $().ready(
@@ -79,22 +107,6 @@
                                 required: true,
                                 maxlength: 6,
                                 minlength: 2,
-                                username:function () {
-                                    aname = $('#id_username').val();
-                                    //判断用户名是否存在ajax
-                                    $.ajax(
-                                        {
-                                            url:'/register_check/',
-                                            type:'get',
-                                            data:{username:aname},
-                                            dataType:'json',
-                                            success:function (data) {
-                                                console.log(data.info);
-                                                return data.info;
-                                            }
-                                        }
-                                    );
-                                }
                             },
                             password: {
                                 required: true,
@@ -120,7 +132,6 @@
                                 required: '用户账号不能为空',
                                 maxlength: '用户账号不能大于6位',
                                 minlength: '用户账号不能小于2位',
-                                username: '用户名重复'
                             },
                             password: {
                                 required: '密码不能为空',
