@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt  # 装饰器，用来使函数避免csrf
+import json
 
 
 def login(username, passwrod):
