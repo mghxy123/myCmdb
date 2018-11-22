@@ -1,8 +1,30 @@
-from django.http import JsonResponse
+from django.http import JsonResponse,HttpResponse
 from django.shortcuts import render
+from django.views.generic import View
 from django.views.decorators.csrf import csrf_exempt  # 装饰器，用来使函数避免csrf
 import json
 
+class API(View):
+    def post(self,request):
+        '''
+        处理post请求
+        :param request:
+        :return:
+        '''
+
+        if request.POST:
+            postData = request.POST
+            return HttpResponse(postData)
+
+    def get(self, request):
+        '''
+        处理get请求
+        :param request:
+        :return:
+        '''
+        if request.GET:
+            gettData = request.GET['key']
+            return HttpResponse(gettData)
 
 def login(username, passwrod):
     result = {

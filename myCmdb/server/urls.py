@@ -8,5 +8,7 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url(r'^$',API.as_view),
+    url(r'^et/', et),
+    url(r'^$', et),
+
 ]

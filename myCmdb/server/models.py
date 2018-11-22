@@ -117,15 +117,6 @@ class api_info(models.Model):
     doc = models.CharField(max_length=64,verbose_name='接口说明')
 
 
-class LoginUser(models.Model):
-    '''
-    登录用户
-    '''
-    username = models.CharField(max_length=32,verbose_name='用户名')
-    password = models.CharField(max_length=32,verbose_name='密码')
-
-    def __str__(self):
-        return self.username
 
 class Service(models.Model):
     '''

@@ -3,20 +3,6 @@ from django.views.generic import View
 
 # Create your views here.
 
-class API(View):
-    def post(self,request):
-        '''
-        处理post请求
-        :param request:
-        :return:
-        '''
+def et(request):
+    return render(request,'server/echartsExample.html')
 
-        pass
-
-    def __get__(self, request):
-        '''
-        处理get请求
-        :param request:
-        :return:
-        '''
-        pass

@@ -18,16 +18,13 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url(r'^$',login),
-    url(r'^/API/',include('server.urls')),
-    url(r'^index/$',index),
+    url(r'^$',blank),
+    url(r'^api/', include('api.urls')),
+    url(r'^user/', include('user.urls')),
+    url(r'^server/', include('server.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^testing/', include('testing.urls')),
-    url(r'^user/', include('user.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+
     url(r'^form_test/',form_test),
-    url(r'^et/',et),
-    url(r'^login/',login),
-    url(r'^register/',register),
-    url(r'^register_check/',register_check),
 ]
