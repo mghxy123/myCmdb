@@ -12,7 +12,7 @@ import json
 import requests
 
 #url = "http://47.98.60.53:9909/service/api/"
-url = "http://127.0.0.1:8888/service/api/"
+url = "http://127.0.0.1:8888/api/"
 #对嵌套部分进行json封装
 #login_data = json.dumps({
 #    "username": "hxy",
@@ -29,7 +29,7 @@ login_data = json.dumps({
 data = {
    "type": "addServer",
     "data": login_data,
-    "token": "ee2d1752c1ddb0d2e96514ded806bbe6"
+    "token": "e6d0fa116be66ba74c70d10e8b482ac1"
 }
 
 response = requests.post(url,data = data)

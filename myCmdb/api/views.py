@@ -44,13 +44,13 @@ import json
 #
 #     def post(self,request):
 #         if request.POST:
-#             postdata = request.POST.get('type')
-#             if postdata == 'user_login':
+#             postData = request.POST.get('type')
+#             if postData == 'user_login':
 #                 self.result['status'] = 'success'
 #                 self.result['data']['token'] = 'I Love You baby'
 #             else:
 #                 self.result['status'] = 'error'
-#                 self.result['data']['token'] = 'you method is error %'%postdata
+#                 self.result['data']['token'] = 'you method is error %'%postData
 #
 #             return JsonResponse(self.result)
 
@@ -73,58 +73,31 @@ class api(View):
             "data": {}
         }
 
-    def makeToken(self,username):
-        """
-            md5算法生成token
-        """
-        time_stamp = str(time.time()) # 获取当前时间的时间的时间戳，然后转换为字符串
-        value = username + time_stamp  # 将值和时间戳字符进行拼接
-
-        md5 =hashlib.md5()
-        md5.update(value.encode())
-        token = md5.hexdigest()
-        return token
-
-    def tokenValid(self,token):
-        #校验存在
-        try:
-            db_token = APITonken.objects.get(value = token)
-        except:
-            return "token error"
-        else:
-            #校验过期
-            db_time_tuple = db_token.time.timetuple()
-            db_time_stamp = time.mktime(db_time_tuple)  # 数据库时间的时间戳
-
-            now_time_tupe = datetime.datetime.now().timetuple()
-            now_time_stamp = time.mktime(now_time_tupe)  # 当前时间的时间戳
-            if 0 < now_time_stamp - db_time_stamp < 3600:
-                return "ok"
-            else:
-                db_token.delete()
-                return "time out"
 
     def get(self,request):
         if request.GET:
             getdata = request.GET['key']
             return HttpResponse(getdata)
-
     def post(self,request):
+        # print('test')
         if request.POST:
-            postdata = json.loads(request.POST.get('data'))
             postype = request.POST.get('type')
+            # postData = json.loads(request.POST.get('data'))
+            postData = json.loads(request.POST.get("data"))
+            print(postData,postype)
             if postype == 'user_login':
-                if postdata:
-                    username = postdata.get('username')
-                    password = postdata.get('password')
+                if postData:
+                    username = postData.get('username')
+                    password = postData.get('password')
                     try:
                         loginUser = CMDBUser.objects.get(username=username)
-                    except Exception as e:
+                        print(loginUser)
+                    except :
                         self.result['status'] = 'error'
                         self.result['data']['error'] = 'no has mamed %s' %username
                     else:
                         db_password = loginUser.password
-                        if db_password == CMDBUser.password:
+                        if password == db_password:
                             try:
                                 db_token = APITonken.objects.get(user_id=loginUser.id)
                             except:
@@ -164,11 +137,67 @@ class api(View):
                 else:#post没有带值
                     self.result['status'] = 'error'
                     self.result['data'] = 'you post value is null'
+            elif postype == "addServer":
+                if postData:
+                    postToken = request.POST.get("token")  # 获取接口请求的数据
+                    if postToken and self.tokenValid(postToken) == "ok":
+                        #获取数据
+                        ip = postData.get("ip")
+                        mac = postData.get("mac")
+                        cpu = postData.get("cpu")
+                        memory = postData.get("memory")
+                        hostname = postData.get("hostname")
+                        #保存数据
+                        server = Service()
+                        server.ip = ip
+                        server.mac = mac
+                        server.cpu = cpu
+                        server.memory = memory
+                        server.hostname = hostname
+                        server.isalive = "false"
+                        server.save()
+                        #发送返回
+                        self.result["status"] = "success"
+                        self.result["data"]["result"] = "save success"
+                    else:
+                        self.result["status"] = "error"
+                        self.result["data"]["result"] = self.tokenValid(postToken)
 
-            else:#请求的，类型不是user_login
-                self.result['status'] = 'error'
-                self.result['data'] = 'you request type not user_login %s'%postdata
+            else: #请求类型
+                self.result["status"] = "error"
+                self.result["data"]["error"] = "no method named %s"%postype
+            return JsonResponse(self.result)
 
+    def maketoken(self,username):
+        """
+            md5算法生成token
+        """
+        time_stamp = str(time.time()) # 获取当前时间的时间的时间戳，然后转换为字符串
+        value = username + time_stamp  # 将值和时间戳字符进行拼接
+
+        md5 =hashlib.md5()
+        md5.update(value.encode())
+        token = md5.hexdigest()
+        return token
+
+    def tokenValid(self,token):
+        #校验存在
+        try:
+            db_token = APITonken.objects.get(value = token)
+        except:
+            return "token error"
+        else:
+            #校验过期
+            db_time_tuple = db_token.time.timetuple()
+            db_time_stamp = time.mktime(db_time_tuple)  # 数据库时间的时间戳
+
+            now_time_tupe = datetime.datetime.now().timetuple()
+            now_time_stamp = time.mktime(now_time_tupe)  # 当前时间的时间戳
+            if 0 < now_time_stamp - db_time_stamp < 3600:
+                return "ok"
+            else:
+                db_token.delete()
+                return "time out"
 
 def login(username, passwrod):
     result = {
