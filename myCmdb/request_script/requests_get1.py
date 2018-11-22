@@ -8,6 +8,7 @@
 #************************************************************************
 
 import requests
-url = 'http://47.98.60.53:9909/service/api/?key=name'
+#url = 'http://47.98.60.53:9909/service/api/?key=name'
+url = 'http://127.0.0.1:8888/api/?key=name'
 response = requests.get(url)
 print(response)

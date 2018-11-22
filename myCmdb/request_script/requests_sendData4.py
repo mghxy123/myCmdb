@@ -11,11 +11,11 @@ import json
 import requests
 
 #url = "http://47.98.60.53:9909/service/api/"
-url = "http://127.0.0.1:8000/service/api/"
+url = "http://127.0.0.1:8888/service/api/"
 #对嵌套部分进行json封装
 login_data = json.dumps({
-    "username": "while",
-    "password": "123"
+    "username": "hxy",
+    "password": "12345678"
 
 })
 

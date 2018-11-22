@@ -8,12 +8,13 @@
 #************************************************************************
 
 import requests
-url = 'http://47.98.60.53:9909/service/api/'
+#url = 'http://47.98.60.53:9909/service/api/'
+url = 'http://127.0.0.1:8888/api/'
 data = {
    "type": "user_login",
     "data": {
-       "username": "while",
-       "password": "123"
+       "username": "hxy",
+       "password": "12345678"
     },
     "token": ""
 }
