@@ -54,7 +54,9 @@ import json
 #
 #             return JsonResponse(self.result)
 
-##这个是第三个脚本的api
+##第三个脚本的就不写了
+
+##这个是第4567脚本的api,第五个脚本需要手动获取token然后放到文件里面去才能运行，不然会报错
 import json
 import time
 import datetime
@@ -72,56 +74,51 @@ class api(View):
             "status": "",
             "data": {}
         }
-
-
-    def get(self,request):
+    def get(self,request): #这里定义了get的数据类型是ip/api/?key=value,这样返回的会是value，切只能是key=
         if request.GET:
-            getdata = request.GET['key']
+            getdata = request.GET['key']#获取get中的key的值
             return HttpResponse(getdata)
+
     def post(self,request):
         if request.POST:
-            postype = request.POST.get('type')
-            # postData = json.loads(request.POST.get('data'))
-            postData = json.loads(request.POST.get("data"))
-            if postype == 'user_login':
+            postype = request.POST.get('type')#获取type中的type的值
+            postData = json.loads(request.POST.get("data"))#获取post里面data的值
+            if postype == 'user_login': #判断用户是用户校验还是，上传数据，这里是用户校验
                 if postData:
-                    username = postData.get('username')
-                    password = postData.get('password')
+                    postUsername = postData.get('username')#获取提交的用户名
+                    postPasswd = postData.get('password')#获取提交的密码
                     try:
-                        loginUser = CMDBUser.objects.get(username=username)
-                    except :
+                        loginUser = CMDBUser.objects.get(username=postUsername)#尝试去数据库获取这个用户的信息
+                    except :#获取不到就说明这个用户不在我们的有权范围内，给这个用户返回没有这个用户
                         self.result['status'] = 'error'
-                        self.result['data']['error'] = 'no has mamed %s' %username
-                    else:
+                        self.result['data']['error'] = 'no has mamed %s' %postUsername
+                    else:#如果有这个用户就来对密码进行校验
                         db_password = loginUser.password
-                        if password == db_password:
-                            try:
+                        if postPasswd == db_password:
+                            try:#密码校验通过了就开始校验token了，通过用户的id到数据库里面去获取token的id，用户的id和token的id是关联了，我觉得这个不好，后面我要改成用户名关联
                                 db_token = APITonken.objects.get(user_id=loginUser.id)
-                            except:
-                                new_token = self.maketoken(username)
-                                print(new_token)
-                                APITonken.objects.create(
+                            except:#如果没有获取到token就说明这个用户是刚刚登陆的，给这个用户新建一个token返回给用户，并把token入库
+                                new_token = self.maketoken(postUsername)#通过调用函数生成token
+                                APITonken.objects.create(#token入库，token表只就有这三个值
                                     value=new_token,
                                     time=datetime.datetime.now(),
                                     user_id=loginUser.id
                                 )
 
                                 self.result['status'] = 'success',
-                                self.result['data']['token'] = new_token
-                                print(self.result)
-                            else:
-                                db_time_tuple = db_token.time.timetuple()
-                                db_time_stamp = time.mktime(db_time_tuple)
+                                self.result['data']['token'] = new_token #入库成功之后就把token和状态存入返回字典里面
+                            else:#如果是获取到了token，就对token的时间进行校验
+                                db_time_tuple = db_token.time.timetuple()#他是这个样子的(tm_year=2018, tm_mon=11, tm_mday=23, tm_hour=15, tm_min=9, tm_sec=10, tm_wday=4, tm_yday=327, tm_isdst=-1)
+                                db_time_stamp = time.mktime(db_time_tuple)#时间戳
                                 now_time_tuple = datetime.datetime.now().timetuple()
-                                now_time_stamp = time.mktime(now_time_tuple)
+                                now_time_stamp = time.mktime(now_time_tuple)#时间戳
 
-                                if 0 < now_time_stamp - db_time_stamp < 1:
+                                if 0 < now_time_stamp - db_time_stamp < 1:#如果时间戳还在这个范围内就给用户返回，你已经获取过时间戳了
                                     self.result['status'] = 'error'
                                     self.result['data']['error'] = 'you aready has a token %s'%db_token.value
 
-                                else:
-                                    new_token = self.maketoken(username)
-
+                                else:#如果时间戳过期了，就给用户生成一个新的时间戳
+                                    new_token = self.maketoken(postUsername)
                                     APITonken.objects.create(
                                         value=new_token,
                                         time=datetime.datetime.now(),
@@ -131,7 +128,7 @@ class api(View):
                                     self.result['data']['token'] = new_token
                         else:#密码错误
                             self.result['status'] = 'error'
-                            self.result['data']['error'] = '%s: you password wrong'%username
+                            self.result['data']['error'] = '%s: you password wrong'%postUsername
                 else:#post没有带值
                     self.result['status'] = 'error'
                     self.result['data'] = 'you post value is null'
@@ -173,17 +170,17 @@ class api(View):
         time_stamp = str(time.time()) # 获取当前时间的时间的时间戳，然后转换为字符串
         value = username + time_stamp  # 将值和时间戳字符进行拼接
 
-        md5 =hashlib.md5()
-        md5.update(value.encode())
-        token = md5.hexdigest()
+        MD5 =hashlib.md5()#实例化一个MD5算法
+        MD5.update(value.encode())#先把value编码成Unicode，然后加入MD5码生成的表中
+        token = MD5.hexdigest()#生成MD5值
         return token
 
     def tokenValid(self,token):
         #校验存在
         try:
-            db_token = APITonken.objects.get(value = token)
+            db_token = APITonken.objects.get(value = token)#从数据库中获取token，在数据库的表中键就是value，等到自己再写一次的时候改成token，就不会看起来会误解了
         except:
-            return "token error"
+            return "token error" #如果获取不到token就说明，这个数据的post没有进行用户校验，返回token error
         else:
             #校验过期
             db_time_tuple = db_token.time.timetuple()
@@ -196,56 +193,3 @@ class api(View):
             else:
                 db_token.delete()
                 return "time out"
-
-def login(username, passwrod):
-    result = {
-        "token": "",
-        "error": ""
-    }
-    return result
-
-@csrf_exempt
-def CMDBApi(requst):
-    # 定义响应的结构
-    result = {
-        "status": "error",
-        "data": {},
-        "error": ""
-    }
-    # 判断如果请求的方式是post并且post有值
-    if requst.method == "POST" and  requst.POST:
-        data = requst.POST #获取post的值
-        ty = data.get("type") #获取具体的参数 #getServer
-        dt = data.get("data") #{ "by": "ip" ,"data": "192.168.2.*"}
-        tk = data.get("token") #123zasdq23
-
-        if tk and dt and ty: #如果请求的类型(type)不对 ty = "getserver"
-            result["error"] = "we have no method named %s"%ty #返回无此类型
-
-
-        elif tk == '' and ty == "login" and dt: #如果请求是登录
-            #dt 是一个字符串
-            try:
-                dt = json.loads(dt.replace("\'","\""))
-            except Exception as e:
-                print(e)
-            username = dt.get("username") #获取用户名
-            password = dt.get("password") #获取密码
-            token = login(username,password)["token"] #进行登录校验，获取校验的结果
-            if token: #如果token有值
-                result["status"] = "success" #返回成功
-                result["data"] = {"token": token} #返回token
-            else: #否则,也就是没值
-                result["error"] = login(username,password)["error"] #返回没有token的错误
-                #大致有
-                    #用户名不存在
-                    #密码错误
-        else: #传参不完整
-            print(tk == '')
-            print(ty == "login")
-            print(dt)
-            result["error"] = "data is not true"
-    else: #请求方式不是post或者post没有值
-        result["error"] = "request must be post and post data not be null"
-    return JsonResponse(result)
-
