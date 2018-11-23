@@ -79,19 +79,16 @@ class api(View):
             getdata = request.GET['key']
             return HttpResponse(getdata)
     def post(self,request):
-        # print('test')
         if request.POST:
             postype = request.POST.get('type')
             # postData = json.loads(request.POST.get('data'))
             postData = json.loads(request.POST.get("data"))
-            print(postData,postype)
             if postype == 'user_login':
                 if postData:
                     username = postData.get('username')
                     password = postData.get('password')
                     try:
                         loginUser = CMDBUser.objects.get(username=username)
-                        print(loginUser)
                     except :
                         self.result['status'] = 'error'
                         self.result['data']['error'] = 'no has mamed %s' %username
@@ -102,7 +99,7 @@ class api(View):
                                 db_token = APITonken.objects.get(user_id=loginUser.id)
                             except:
                                 new_token = self.maketoken(username)
-
+                                print(new_token)
                                 APITonken.objects.create(
                                     value=new_token,
                                     time=datetime.datetime.now(),
@@ -111,13 +108,14 @@ class api(View):
 
                                 self.result['status'] = 'success',
                                 self.result['data']['token'] = new_token
+                                print(self.result)
                             else:
                                 db_time_tuple = db_token.time.timetuple()
                                 db_time_stamp = time.mktime(db_time_tuple)
                                 now_time_tuple = datetime.datetime.now().timetuple()
                                 now_time_stamp = time.mktime(now_time_tuple)
 
-                                if 0 < now_time_stamp - db_time_stamp < 3600:
+                                if 0 < now_time_stamp - db_time_stamp < 1:
                                     self.result['status'] = 'error'
                                     self.result['data']['error'] = 'you aready has a token %s'%db_token.value
 
