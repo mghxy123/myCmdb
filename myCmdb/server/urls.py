@@ -10,5 +10,8 @@ from .views import *
 urlpatterns = [
     url(r'^et/', et),
     url(r'^$', et),
+    url(r'^serverData/', serverData),
+    url(r'^serverList/', serverList),
+    url(r'^serverList1/', serverList1),
 
 ]

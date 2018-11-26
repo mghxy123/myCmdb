@@ -1,0 +1,8 @@
+include LICENSE.txt
+include AGPLv3.txt
+include babel_gateone.cfg
+include *.rst
+graft scripts
+graft gateone
+global-exclude *.kate-swp
+global-exclude *.pyc

@@ -1,0 +1,125 @@
+{% extends "blank.html" %}
+
+{% block title %}
+    get page
+{% endblock %}
+
+{% block style %}
+    <script src = "/static/vendor/jquery/jquery.min.js"></script>
+    <script src = "/static/js/vue.min.js"></script>
+    <script src = "/static/js/vue-resource.js"></script>
+{% endblock %}
+
+{% block label %}
+    服务器数据展示
+{% endblock %}
+
+{% block content %}
+    {% verbatim myblock %}
+       <div class="col-lg-12" id="content">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    服务器信息
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th class = "text-center">主机名</th>
+                                    <th class = "text-center">IP地址</th>
+                                    <th class = "text-center">mac地址</th>
+                                    <th class = "text-center">内存大小</th>
+                                    <th class = "text-center">CPU型号</th>
+                                    <th class = "text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for = "data in pageData">
+                                    <td>{{ data.hostname }}</td>
+                                    <td class = "text-center">{{ data.ip }}</td>
+                                    <td class = "text-center">{{ data.mac }}</td>
+                                    <td class = "text-center">{{ data.memory }}</td>
+                                    <td class = "text-center">{{ data.cpu }}</td>
+                                    <td class = "text-center">
+                                        <label class = "label label-warning">激活</label>
+                                        <label class = "label label-info">远程</label>
+                                        <label class = "label label-danger">删除</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                    <ul class="pagination pull-right">
+
+                        <li v-if="page!=1"><a v-on:click="getPage(afterpage)">上一页</a></li>
+                        <li v-for="p in pageRange"><a v-on:click="getPage(p)">{{ p }}</a></li>
+                        <li v-if="islast!=1"><a v-on:click="getPage(nextpage)">下一页</a></li>
+                    </ul>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+    {% endverbatim myblock %}
+{% endblock %}
+
+{% block script %}
+<script>
+    function getData(page) {
+        var result;
+        url = "http://127.0.0.1:8888/server/serverData/?page="+page;
+        $.ajax(
+             {
+                 url: url,
+                 type: "get",
+                 data: "",
+                 async:false,
+                 success: function(data){
+                     result = data;
+                     console.log(data)
+                 },
+                 error: function (error) {
+                     result = error
+                 }
+             }    
+        );
+        return result
+    }
+    Vue.use(VueResource);
+    new Vue(
+        {
+            el: "#content",
+            data: {
+                pageData: "",
+                pageRange: "",
+                page: "",
+                afterpage: "",
+                nextpage: "",
+                islast: ""
+            },
+            created: function () {
+                this.pageData = getData(1)["pageData"];
+                console.log(this.pageData);
+                this.pageRange = getData(1)["prange"];
+                this.page = getData(1)["page"];
+                this.nextpage = this.page+1;
+                this.islast = getData(1)["islast"];
+            },
+            methods: {
+                getPage: function (page) {
+                            this.pageData = getData(page)["pageData"];
+                            this.pageRange = getData(page)["prange"];
+                            this.page = getData(page)["page"];
+                            this.afterpage = this.page-1;
+                            this.nextpage = this.page+1;
+                            this.islast = getData(page)["islast"];
+                }
+            }
+        }
+    )
+</script>
+{% endblock %}

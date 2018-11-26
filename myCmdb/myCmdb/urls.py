@@ -18,7 +18,7 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url(r'^$',blank),
+    url(r'^$',include('user.urls')),
     url(r'^api/', include('api.urls')),
     url(r'^user/', include('user.urls')),
     url(r'^server/', include('server.urls')),
