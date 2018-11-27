@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>gateone</title>
-    <script src="/static/vendor/jquery/jquery.min.js"></script>
-    <script src="/static/js/gateone.js"></script>
-</head>
-<body>
-    <div id="gateone_conntainer">
-        <div id="">
+    <head>
+        <meta charset="UTF-8">
+        <title>GateOneConnection</title>
+        <script src = "/static/vendor/jquery/jquery.min.js"></script>
+        <script src = "/static/js/gateone.js"></script>
+    </head>
+    <body>
+        <div id = "gateone_container">
+            <div id = "gateone">
 
-
+            </div>
         </div>
-    </div>
-    <script>
-        $(
-            function () {
-                GateOne
-            }
-        )
-    </script>
-</body>
+        <script>
+            $(
+                 function () {
+                       GateOne.init(
+                               {
+                                   url: "https://172.16.188.128:443"
+                               }
+                       )
+                 }
+            )
+        </script>
+    </body>
 </html>

@@ -8,10 +8,17 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url(r'^et/', et),
     url(r'^$', et),
+    url(r'^et/', et),
     url(r'^serverData/', serverData),
     url(r'^serverList/', serverList),
     url(r'^serverList1/', serverList1),
+
+]
+
+urlpatterns +=[
+    url(r'^gateone/', gateone),
+    url(r'^gateonev2/', gateonev2),
+    url(r'^gateValid/', gateValid),
 
 ]

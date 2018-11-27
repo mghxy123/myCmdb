@@ -8,10 +8,6 @@ from django.http import JsonResponse,HttpResponse
 def et(request):
     return render(request,'server/echartsExample.html')
 
-def gateone(request):
-    return render(request,'server/gateoneConnect.html')
-
-
 def serverList(request):
     return render(request,'server/getpage.html')
 
@@ -116,3 +112,56 @@ def serverData(request):
 
 def serverList1(request):
     return render(request,'server/getpage1.html')
+
+def gateone(request):
+    return render(request,'server/gateoneConnect.html')
+
+def gateonev2(request):
+    if request.method == 'GET' and request.GET:
+        rget = request.GET
+        ip = rget.get('ip','172.16.188.128')
+        port = rget.get('port',22)
+        user = rget.get('user','root')
+        return render(request,'server/gateOneConnect_v2.html',locals())
+    else:
+        return HttpResponse('404 not found!!!')
+
+import time,hmac,json
+import hashlib
+def gateValid(request):
+    gateone_server = 'https://172.16.188.128:443'
+
+    key = 'MzY0OGVkZmFjYzA4NDg0N2JhMDhkZjYzYWViMjE5YzY1N'
+    value = 'ZjBlMWVlODkwYzQzNGViMThhN2NjNGQxNWNiMzNjZWJjM'.encode()
+
+    # authobj_dict = {
+    #     'api_key':key,
+    #     'upn':'gateone',
+    #     'timestamp':str(int(time.time()*1000)),
+    #     'signature_method': 'HMAC-SHA1',
+    #     'api_version':'1.0'
+    #
+    # }
+    # my_hash = hmac.new(value,digestmod=hashlib.sha1)
+    # update_data = authobj_dict['api_key']+authobj_dict['upn']+authobj_dict['timestamp']
+    # my_hash.update(update_data.encode())
+    #
+    # authobj_dict['signatrue'] = my_hash.hexdigest()
+    # auth_info_and_server = {'url':gateone_server,'auth':authobj_dict}
+    # valid_json_auth_info = json.dumps(auth_info_and_server)
+    # return JsonResponse(valid_json_auth_info)
+    authodj_dict = {
+        'api_key': key,
+        'upn': 'gateone',
+        'timestamp': str(int(time.time() * 1000)),
+        'signature_method': 'HMAC-SHA1',
+        'api_version': '1.0'
+    }
+    my_hash = hmac.new(value,digestmod = hashlib.sha1)
+    update_data = authodj_dict['api_key'] + authodj_dict['upn'] + authodj_dict['timestamp']
+    my_hash.update(update_data.encode())
+
+    authodj_dict['signature'] = my_hash.hexdigest()
+    auth_info_and_server = {"url": gateone_server, "auth": authodj_dict}
+    valid_json_auth_info = json.dumps(auth_info_and_server)
+    return HttpResponse(valid_json_auth_info)
