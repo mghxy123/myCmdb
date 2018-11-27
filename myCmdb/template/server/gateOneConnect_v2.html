@@ -15,11 +15,11 @@
      <script>
         $(document).ready(
              function () {
-                 {#var ip = "{{ ip }}";#}
-                 {#var port = "{{ port }}";#}
-                 {#var user = "{{ user }}";#}
-                 {#var ssh_url = "ssh://"+user+"@"+ip+":"+port;#}
-                 var ssh_url = 'ssh://root@172.16.188.128:443';
+                 var ip = "{{ ip }}";
+                 var port = "{{ port }}";
+                 var user = "{{ user }}";
+                 var ssh_url = "ssh://"+user+"@"+ip+":"+port;
+                 {#var ssh_url = 'ssh://root@172.16.188.128:443';#}
                  var request = $.ajax({
                      url: "/server/gateValid/",
                      type: "GET",

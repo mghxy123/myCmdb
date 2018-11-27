@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef3d3f0-d833-4bba-bc19-4ded10869600" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/server/gateoneConnect.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/server/gateoneConnect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/server/getpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/server/getpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -221,19 +218,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1478" />
+          <entry key="html" value="1486" />
           <entry key="py" value="6790" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1478" />
+          <entry key="HTML" value="1486" />
           <entry key="Python" value="6790" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="24" />
+          <entry key="html" value="26" />
           <entry key="pstat" value="1" />
           <entry key="py" value="53" />
           <entry key="server_apitonken" value="8" />
@@ -246,7 +243,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="22" />
-          <entry key="HTML" value="24" />
+          <entry key="HTML" value="26" />
           <entry key="Profiler Session" value="1" />
           <entry key="Python" value="53" />
           <entry key="Scratch" value="3" />
@@ -256,11 +253,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+            <state relative-caret-position="69">
+              <caret line="151" column="37" lean-forward="true" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <marker date="1543307013781" expanded="true" signature="253:254" ph="..." />
@@ -285,14 +282,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/server/gateOneConnect_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            <state relative-caret-position="114">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -310,8 +316,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SB</find>
-      <find>Blank</find>
       <find>Forms</find>
       <find>do</find>
       <find>models</find>
@@ -340,6 +344,8 @@
       <find>getData</find>
       <find>content</find>
       <find>88</find>
+      <find>key</find>
+      <find>signature</find>
     </findStrings>
     <replaceStrings>
       <replace>forms</replace>
@@ -396,10 +402,10 @@
         <option value="$PROJECT_DIR$/template/server/gatepage.html" />
         <option value="$PROJECT_DIR$/template/server/getpage1.html" />
         <option value="$PROJECT_DIR$/template/server/gateoneConnect.html" />
-        <option value="$PROJECT_DIR$/template/server/getpage.html" />
         <option value="$PROJECT_DIR$/template/server/gateOneConnect_v1.html" />
         <option value="$PROJECT_DIR$/server/urls.py" />
         <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/template/server/getpage.html" />
         <option value="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" />
       </list>
     </option>
@@ -410,7 +416,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="674" />
     <option name="y" value="23" />
     <option name="width" value="606" />
@@ -667,15 +673,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="720" extended-state="6" />
+    <frame x="674" y="23" width="606" height="720" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11470113" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32471728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.31528664" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.31528664" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3057325" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -990,13 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/server/getpage1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1009,13 +1008,6 @@
             <element signature="e#5738#5809#0" />
             <element signature="e#6329#6511#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -1036,10 +1028,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/getpage1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/gateOneConnect_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+        <state relative-caret-position="69">
+          <caret line="151" column="37" lean-forward="true" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1543307013781" expanded="true" signature="253:254" ph="..." />
@@ -1047,16 +1063,6 @@
             <marker date="1543307013781" expanded="true" signature="377:378" ph="..." />
             <marker date="1543307013781" expanded="true" signature="2337:2431" ph="..." />
             <marker date="1543307013781" expanded="true" signature="3753:3758" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/server/gateOneConnect_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
