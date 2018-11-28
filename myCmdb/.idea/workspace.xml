@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ef3d3f0-d833-4bba-bc19-4ded10869600" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/template/server/getpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/server/getpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_script/requests_sendServer6.py" beforeDir="false" afterPath="$PROJECT_DIR$/request_script/more_times_sendServer7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_script/requests_sendServer7.py" beforeDir="false" afterPath="$PROJECT_DIR$/request_script/one_times_sendServer6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/myCmdb$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1542881207806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/myCmdb$more_times_sendServer7.coverage" NAME="more_times_sendServer7 Coverage Results" MODIFIED="1543372626148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/request_script" />
     <SUITE FILE_PATH="coverage/myCmdb$fente_test.coverage" NAME="fente_test Coverage Results" MODIFIED="1543201070459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/myCmdb$views.coverage" NAME="views Coverage Results" MODIFIED="1542186251662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myCmdb" />
   </component>
@@ -216,34 +220,36 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="18" />
           <entry key="html" value="1580" />
-          <entry key="py" value="6790" />
+          <entry key="py" value="7176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1580" />
-          <entry key="Python" value="6790" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="7176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="27" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="59" />
+          <entry key="py" value="61" />
           <entry key="server_apitonken" value="8" />
           <entry key="server_cmdbuser" value="6" />
           <entry key="server_cmdbuser_service" value="1" />
-          <entry key="server_service" value="7" />
+          <entry key="server_service" value="8" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="22" />
+          <entry key="Database Element" value="23" />
           <entry key="HTML" value="27" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="59" />
+          <entry key="Python" value="61" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
@@ -251,11 +257,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -264,34 +270,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="151" column="37" lean-forward="true" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1543307013781" expanded="true" signature="253:254" ph="..." />
-                <marker date="1543307013781" expanded="true" signature="278:283" ph="..." />
-                <marker date="1543307013781" expanded="true" signature="377:378" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="115" column="79" selection-start-line="115" selection-start-column="79" selection-end-line="115" selection-end-column="79" />
+            <state relative-caret-position="54">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/request_script/requests_sendServer6.py">
+        <entry file="file://$PROJECT_DIR$/request_script/more_times_sendServer7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="-342">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://c838b721-e07b-435f-943e-c8853ed03310/schema/main/table/server_service">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -400,6 +400,7 @@
         <option value="$PROJECT_DIR$/server/views.py" />
         <option value="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" />
         <option value="$PROJECT_DIR$/template/server/getpage.html" />
+        <option value="$PROJECT_DIR$/request_script/more_times_sendServer7.py" />
       </list>
     </option>
   </component>
@@ -540,6 +541,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="more_times_sendServer7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myCmdb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/request_script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/request_script/more_times_sendServer7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myCmdb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -614,9 +637,11 @@
       <item itemvalue="Python.views" />
       <item itemvalue="Python.views (1)" />
       <item itemvalue="Python.fente_test" />
+      <item itemvalue="Python.more_times_sendServer7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.more_times_sendServer7" />
         <item itemvalue="Python.fente_test" />
         <item itemvalue="Python.views (1)" />
         <item itemvalue="Python.views" />
@@ -663,7 +688,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.31528664" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.31528664" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3057325" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -680,7 +705,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.5056543" />
+      <window_info anchor="right" id="Database" order="4" weight="0.39095315" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
   </component>
@@ -695,13 +720,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="some bug can not redirect to index" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testing/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/registerStyleColor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -909,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://c838b721-e07b-435f-943e-c8853ed03310/schema/main/table/server_service">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fente_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -1012,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2265">
+        <state relative-caret-position="249">
           <caret line="151" column="37" lean-forward="true" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -1023,27 +1034,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/request_script/requests_sendServer6.py">
+    <entry file="file://$PROJECT_DIR$/request_script/one_times_sendServer6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="3">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="115" column="79" selection-start-line="115" selection-start-column="79" selection-end-line="115" selection-end-column="79" />
+        <state relative-caret-position="54">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c838b721-e07b-435f-943e-c8853ed03310/schema/main/table/server_service">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request_script/more_times_sendServer7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
