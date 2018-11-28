@@ -105,7 +105,7 @@
                     nextpage: "",
                     islast: ""
                 },
-                created: function () {
+                created: function () {//created就是和__init__一样，请求页面就会自动的去掉用的
                     this.pageData = getData(1)["pageData"];
                     console.log(this.pageData);
                     this.pageRange = getData(1)["prange"];
@@ -113,7 +113,7 @@
                     this.nextpage = this.page+1;
                     this.islast = getData(1)["islast"];
                 },
-                methods: {
+                methods: {//method是一个方法，页面被请求时不会被调用，传入参数时才会被调用，methods就是可以写多个方法
                     getPage: function (page) {
                         this.pageData = getData(page)["pageData"];
                         this.pageRange = getData(page)["prange"];
