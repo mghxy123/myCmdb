@@ -157,3 +157,22 @@ def login(request):
         response.set_cookie('hello','aaaaa',max_age=6666)
         #设置返回的cookie
         return response
+from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
+def userList(request,pindex):
+    #获取cmdbuser表中说的所有记录
+    user_list = CMDBUser.objects.all()
+
+    #生成paginator对象，定义每页显示2条数据
+    paginator = Paginator(user_list,2)
+
+    #从前端获得当前页码数，默认为1
+    page = paginator.page(int(pindex))
+    context = {'page':page}
+    try:
+        user_list = paginator.page(page)#获取当前页码的记录
+    except PageNotAnInteger:
+        user_list = paginator.page(1)#如果用户的页码不是整数是，显示第一页的内容
+    except EmptyPage:
+        user_list = paginator.page(paginator.num_pages)#如果用户输入的页数不存在时，输出最后一页的内容
+
+    return render(request,'user/userList.html',context)

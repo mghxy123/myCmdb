@@ -18,3 +18,7 @@ urlpatterns = [
     url(r'^testing_register_page/', testing_register_page),#简单的用于用户账户的检测
     url(r'^testing_register_check/', testing_register_check),
 ]
+
+urlpatterns +=[
+    url(r'^userList/(\d*)/',userList)
+]
