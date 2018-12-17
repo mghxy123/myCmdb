@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6ef3d3f0-d833-4bba-bc19-4ded10869600" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
@@ -15,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/template/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/blank.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/server/getpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/server/getpage.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="6ef3d3f0-d833-4bba-bc19-4ded10869600" name="Default Changelist" comment="" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/myCmdb$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1542881207806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/myCmdb$more_times_sendServer7.coverage" NAME="more_times_sendServer7 Coverage Results" MODIFIED="1543372626148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/request_script" />
     <SUITE FILE_PATH="coverage/myCmdb$fente_test.coverage" NAME="fente_test Coverage Results" MODIFIED="1543201070459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server" />
     <SUITE FILE_PATH="coverage/myCmdb$views.coverage" NAME="views Coverage Results" MODIFIED="1542186251662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myCmdb" />
   </component>
@@ -59,6 +64,7 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -68,12 +74,228 @@
               <caret line="3" column="21" selection-start-line="3" selection-end-line="3" selection-end-column="27" />
               <folding>
                 <element signature="e#3229#4299#0" />
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="1674023991">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="auth_user" value="1" />
+          <entry key="css" value="6" />
+          <entry key="html" value="13" />
+          <entry key="jpg" value="1" />
+          <entry key="js" value="3" />
+          <entry key="py" value="29" />
+          <entry key="register_style_color" value="1" />
+          <entry key="server_cmdbuser" value="12" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="Database Element" value="13" />
+          <entry key="HTML" value="13" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="29" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="36" />
+          <entry key="dummy" value="1" />
+          <entry key="html" value="3964" />
+          <entry key="py" value="4281" />
+          <entry key="sql" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="19" />
+          <entry key="HTML" value="3964" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="4281" />
+          <entry key="SQL" value="21" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-904367239">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="184" />
+          <entry key="py" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="184" />
+          <entry key="Python" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1156875240">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="476" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="476" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-194123853">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="10" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="4" />
+          <entry key="py" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="4" />
+          <entry key="Python" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="6" />
+          <entry key="txt" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="6082994">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="18" />
+          <entry key="html" value="2487" />
+          <entry key="py" value="7645" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="2487" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="7645" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="37" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="68" />
+          <entry key="server_apitonken" value="8" />
+          <entry key="server_cmdbuser" value="7" />
+          <entry key="server_cmdbuser_service" value="1" />
+          <entry key="server_service" value="8" />
+          <entry key="sql" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="24" />
+          <entry key="HTML" value="37" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="68" />
+          <entry key="Scratch" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/user/userList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+              <folding>
+                <element signature="e#2125#2201#0#HTML" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/server/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
@@ -87,28 +309,53 @@
                 <element signature="e#5847#6293#0" />
                 <element signature="e#6329#6511#0" />
                 <element signature="e#6548#6567#1" />
+=======
+        <entry file="file://$PROJECT_DIR$/user/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="170" selection-start-line="170" selection-end-line="175" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#3229#4299#0" />
+                <marker date="1543408512367" expanded="true" signature="5761:5762" ph="..." />
+                <marker date="1543408512367" expanded="true" signature="5761:5766" ph="..." />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/server/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/user/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding>
+                <element signature="e#106#139#0" expanded="true" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
+        <entry file="file://$PROJECT_DIR$/template/server/getpage1.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1127">
               <caret line="49" column="84" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
+=======
+            <state relative-caret-position="167">
+              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
             </state>
           </provider>
         </entry>
@@ -116,6 +363,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/blank.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="406">
               <caret line="289" column="72" selection-start-line="289" selection-start-column="72" selection-end-line="289" selection-end-column="72" />
             </state>
@@ -164,6 +412,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="851">
               <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+=======
+            <state relative-caret-position="252">
+              <caret line="283" column="54" selection-start-line="283" selection-start-column="54" selection-end-line="283" selection-end-column="54" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
             </state>
           </provider>
         </entry>
@@ -181,12 +433,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Forms</find>
-      <find>do</find>
-      <find>models</find>
-      <find>verbose_name</find>
-      <find>name</find>
-      <find>map</find>
       <find>bootstrap.min.css.map</find>
       <find>phototfile</find>
       <find>../</find>
@@ -211,6 +457,12 @@
       <find>88</find>
       <find>key</find>
       <find>signature</find>
+      <find>serverList</find>
+      <find>serverList1</find>
+      <find>服务器列表</find>
+      <find>register_check</find>
+      <find>nav</find>
+      <find>ul</find>
     </findStrings>
     <replaceStrings>
       <replace>forms</replace>
@@ -252,33 +504,50 @@
         <option value="$PROJECT_DIR$/template/server/echartsExample.html" />
         <option value="$PROJECT_DIR$/template/user/index.html" />
         <option value="$PROJECT_DIR$/template/user/register_check.html" />
-        <option value="$PROJECT_DIR$/user/urls.py" />
         <option value="$PROJECT_DIR$/api/urls.py" />
         <option value="$PROJECT_DIR$/server/models.py" />
         <option value="$PROJECT_DIR$/request_script/requests_sendServer.py" />
         <option value="$PROJECT_DIR$/request_script/requests_sendServer6.py" />
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/myCmdb/urls.py" />
-        <option value="$PROJECT_DIR$/user/views.py" />
         <option value="$PROJECT_DIR$/server/fente_test.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/be804fdd-9539-43fd-ac54-9af52af09c38/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c838b721-e07b-435f-943e-c8853ed03310/console.sql" />
         <option value="$PROJECT_DIR$/template/server/gatepage.html" />
-        <option value="$PROJECT_DIR$/template/server/getpage1.html" />
         <option value="$PROJECT_DIR$/template/server/gateoneConnect.html" />
         <option value="$PROJECT_DIR$/template/server/gateOneConnect_v1.html" />
         <option value="$PROJECT_DIR$/server/urls.py" />
         <option value="$PROJECT_DIR$/server/views.py" />
         <option value="$PROJECT_DIR$/template/server/gateOneConnect_v2.html" />
         <option value="$PROJECT_DIR$/template/server/getpage.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/template/blank.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="674" />
+=======
+        <option value="$PROJECT_DIR$/request_script/more_times_sendServer7.py" />
+        <option value="$PROJECT_DIR$/template/server/getpage1.html" />
+        <option value="$PROJECT_DIR$/template/blank.html" />
+        <option value="$PROJECT_DIR$/user/urls.py" />
+        <option value="$PROJECT_DIR$/user/views.py" />
+        <option value="$PROJECT_DIR$/template/user/userList.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="568" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
     <option name="y" value="23" />
-    <option name="width" value="606" />
+    <option name="width" value="712" />
     <option name="height" value="720" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -314,6 +583,46 @@
               <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
               <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="request_script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myCmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myCmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
           </expand>
           <select />
         </subPane>
@@ -329,7 +638,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -373,6 +682,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/fente_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="more_times_sendServer7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myCmdb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/request_script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/request_script/more_times_sendServer7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,9 +786,11 @@
       <item itemvalue="Python.views" />
       <item itemvalue="Python.views (1)" />
       <item itemvalue="Python.fente_test" />
+      <item itemvalue="Python.more_times_sendServer7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.more_times_sendServer7" />
         <item itemvalue="Python.fente_test" />
         <item itemvalue="Python.views (1)" />
         <item itemvalue="Python.views" />
@@ -504,14 +837,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
+=======
+    <frame x="0" y="23" width="1280" height="720" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15751211" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.31489843" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.21496816" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3057325" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -528,7 +872,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Database" order="4" weight="0.47961372" />
+=======
+      <window_info anchor="right" id="Database" order="4" weight="0.2180937" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
   </component>
@@ -539,16 +887,33 @@
     <MESSAGE value="some bug can not redirect to index" />
     <option name="LAST_COMMIT_MESSAGE" value="some bug can not redirect to index" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/template/user/userList.html</url>
+          <line>36</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/echartsExample.html" />
-    <entry file="file://$PROJECT_DIR$/template/index.html" />
-    <entry file="file://$PROJECT_DIR$/template/aa.html">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/user/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/testing/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
+    <entry file="file://$PROJECT_DIR$/template/echartsExample.html" />
+    <entry file="file://$PROJECT_DIR$/template/index.html" />
     <entry file="file://$PROJECT_DIR$/myCmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -559,11 +924,18 @@
     <entry file="file://$PROJECT_DIR$/user/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="das://ab1222f2-fafc-407d-a177-2aa11f7948d6/schema/main/table/server_cmdbuser_service" />
     <entry file="file://$PROJECT_DIR$/template/server/echartsExample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+=======
+    <entry file="das://ab1222f2-fafc-407d-a177-2aa11f7948d6/schema/main/table/server_cmdbuser_service">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
         </state>
       </provider>
     </entry>
@@ -599,18 +971,43 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://ab1222f2-fafc-407d-a177-2aa11f7948d6/schema/main/table/server_apitonken" />
     <entry file="file://$PROJECT_DIR$/request_script/requests_sendServer.py" />
     <entry file="file://$PROJECT_DIR$/request_script/requests_sendServer6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/request_script/requests_sendData4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ab1222f2-fafc-407d-a177-2aa11f7948d6/schema/main/table/server_apitonken">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request_script/requests_sendServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#122#133#0" expanded="true" />
+          </folding>
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/request_script/requests_post2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="das://be804fdd-9539-43fd-ac54-9af52af09c38/schema/main/table/server_apitonken" />
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,6 +1016,12 @@
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+=======
+    <entry file="das://be804fdd-9539-43fd-ac54-9af52af09c38/schema/main/table/server_apitonken">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
         </state>
       </provider>
     </entry>
@@ -634,6 +1037,7 @@
         <state relative-caret-position="-69" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/template/user/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-563" />
@@ -647,6 +1051,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+=======
+    <entry file="das://be804fdd-9539-43fd-ac54-9af52af09c38/schema/main/table/server_service">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
         </state>
       </provider>
     </entry>
@@ -667,6 +1077,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/template/server/getpage1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -675,6 +1086,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/server/gateOneConnect_v2.html">
+=======
+    <entry file="file://$PROJECT_DIR$/server/fente_test.py">
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
@@ -695,6 +1109,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://ce6ac51c-19c5-4f18-96b5-113d81a6966f/schema/main/table/server_cmdbuser">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -702,6 +1117,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
     <entry file="file://$PROJECT_DIR$/server/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -729,18 +1146,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/server/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/template/server/gateOneConnect_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
+    <entry file="file://$PROJECT_DIR$/request_script/one_times_sendServer6.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1127">
           <caret line="49" column="84" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
         </state>
@@ -778,6 +1205,148 @@
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="e#105#137#0" expanded="true" />
+=======
+        <state relative-caret-position="3">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c838b721-e07b-435f-943e-c8853ed03310/schema/main/table/server_service">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request_script/more_times_sendServer7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/aa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/echartsExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#105#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c838b721-e07b-435f-943e-c8853ed03310/schema/main/table/server_cmdbuser">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#91#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/getpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="36" lean-forward="true" selection-end-line="128" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="112" column="15" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1543307013781" expanded="true" signature="253:254" ph="..." />
+            <marker date="1543307013781" expanded="true" signature="278:283" ph="..." />
+            <marker date="1543307013781" expanded="true" signature="377:378" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="283" column="54" selection-start-line="283" selection-start-column="54" selection-end-line="283" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#106#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/server/getpage1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="170" selection-start-line="170" selection-end-line="175" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#3229#4299#0" />
+            <marker date="1543408512367" expanded="true" signature="5761:5762" ph="..." />
+            <marker date="1543408512367" expanded="true" signature="5761:5766" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/user/userList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+          <folding>
+            <element signature="e#2125#2201#0#HTML" />
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
           </folding>
         </state>
       </provider>

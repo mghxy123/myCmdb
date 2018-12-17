@@ -1,5 +1,6 @@
 # mytestCMDB
 my django  testing CMDB
+<<<<<<< HEAD
 
 user : password
 hxy :	12345678
@@ -17,3 +18,6 @@ myname :	123456
 7、点击数据库会出现一个竖状的图标
 8、直接在浏览器上输入http://127.0.0.1:8888/user/login/ 也是用户的登录页面
 9、request_script里面的脚本是配合api做get、post请求的
+=======
+#this for testing python filecmp script no more
+>>>>>>> 222a3c625545e2f709779fa955967f038f29b859
